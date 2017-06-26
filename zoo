@@ -1,0 +1,32 @@
+package Annotation;
+
+/**
+ * title:
+ * user:taotk
+ * date:2017/6/1
+ * time:16:29
+ * company:www.51pjia.com
+ */
+public class Test {
+    public static void main(String[] args) {
+        Cat zoo = new Cat();
+        zoo.count();
+        System.out.println(zoo.sum);
+
+    }
+}
+class Zoo{
+    public int sum = 158;
+    public void count(){
+        System.out.println("Zoo have "+sum);
+    }
+}
+class Cat extends Zoo{
+    public int sum = 58;
+    public void count(){
+        System.out.println("Cat have "+sum);
+    }
+    public void zooCount(){
+        System.out.println("Zoo have "+super.sum);
+    }
+}
